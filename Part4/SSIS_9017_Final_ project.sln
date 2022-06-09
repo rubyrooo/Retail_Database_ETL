@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "SSIS_9017_Final_ project", "SSIS_9017_Final_ project\SSIS_9017_Final_ project.dtproj", "{BDB8D88C-8448-4870-B948-7C832B221C16}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BDB8D88C-8448-4870-B948-7C832B221C16}.Development|Default.ActiveCfg = Development
+		{BDB8D88C-8448-4870-B948-7C832B221C16}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6AC8D7B1-9AC0-45AF-8B61-1FD77637A8AC}
+	EndGlobalSection
+EndGlobal

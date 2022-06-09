@@ -1,0 +1,5 @@
+SELECT 
+	NON EMPTY { [Measures].[Total Quantity] } ON COLUMNS, 
+	NON EMPTY { ([Dim Game].[Game Name].[Game Name].ALLMEMBERS * 
+	[Dim Platform].[Platform Name].[Platform Name].ALLMEMBERS ) } ON ROWS 
+FROM [cubeGameStoreDW]

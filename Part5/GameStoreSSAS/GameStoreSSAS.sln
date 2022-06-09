@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29926.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "GameStoreSSAS", "GameStoreSSAS.dwproj", "{F35E5F0E-CEB8-45C6-A7D3-04E6D0456AA5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F35E5F0E-CEB8-45C6-A7D3-04E6D0456AA5}.Development|Default.ActiveCfg = Development
+		{F35E5F0E-CEB8-45C6-A7D3-04E6D0456AA5}.Development|Default.Build.0 = Development
+		{F35E5F0E-CEB8-45C6-A7D3-04E6D0456AA5}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {125D4126-39A7-45A5-B93A-871B9F3D96F0}
+	EndGlobalSection
+EndGlobal

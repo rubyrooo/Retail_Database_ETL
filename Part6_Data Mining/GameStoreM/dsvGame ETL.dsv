@@ -1,0 +1,94 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="eaf26422-609b-47eb-b334-6a488b7e5dbf" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>dsvGame ETL</ID>
+  <Name>dsvGame ETL</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:NameMatchingCriteria</Name>
+      <Value>1</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>dsGame ETL</DataSourceID>
+  <Schema>
+    <xs:schema id="dsvGame_x0020_ETL" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="dsvGame_x0020_ETL" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="a52f51f0-0907-410b-8c20-6e526e60ff0b">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_DimGame" msprop:design-time-name="501b37ed-3702-4058-a928-c76eabdb57bc" msprop:DbTableName="DimGame" msprop:FriendlyName="DimGame" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="GameKey" msprop:design-time-name="456cdb2c-4546-41fe-af71-039b951c1b08" msprop:DbColumnName="GameKey" msprop:FriendlyName="GameKey" type="xs:int" />
+                  <xs:element name="Rating" msprop:design-time-name="97ffc7ac-7953-45d1-abf3-15e725de0a79" msprop:DbColumnName="Rating" msprop:FriendlyName="Rating" type="xs:int" minOccurs="0" />
+                  <xs:element name="ReleaseDate" msprop:design-time-name="bbed4028-c107-49d5-8dcb-37c4f247641a" msprop:DbColumnName="ReleaseDate" msprop:FriendlyName="ReleaseDate" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="GameName" msprop:design-time-name="1dc1bcbd-ff34-49a5-b39b-d485851547c4" msprop:DbColumnName="GameName" msprop:FriendlyName="GameName" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="PlayerCount" msprop:design-time-name="81f0ae62-9345-4cd7-ab04-021595035189" msprop:DbColumnName="PlayerCount" msprop:FriendlyName="PlayerCount" type="xs:int" minOccurs="0" />
+                  <xs:element name="RecommendationCount" msprop:design-time-name="2fee2d9a-1755-4baf-ad09-9f1598b71b14" msprop:DbColumnName="RecommendationCount" msprop:FriendlyName="RecommendationCount" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_vTargetQuantity" msprop:design-time-name="b5a4a47d-f49f-4ee8-babb-899c81dd522d" msprop:DbTableName="vTargetQuantity" msprop:FriendlyName="vTargetQuantity" msprop:DbSchemaName="dbo" msprop:TableType="View">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="GameKey" msprop:design-time-name="d75cfd0e-1148-400f-a84a-0a51baebc25c" msprop:DbColumnName="GameKey" msprop:FriendlyName="GameKey" type="xs:int" />
+                  <xs:element name="PlayerCount" msprop:design-time-name="84c8f08c-e08b-47d6-ba9a-d05dd3fe7323" msprop:DbColumnName="PlayerCount" msprop:FriendlyName="PlayerCount" type="xs:int" minOccurs="0" />
+                  <xs:element name="RecommendationCount" msprop:design-time-name="24554d1d-c7e1-4b07-b97e-b8a388a44420" msprop:DbColumnName="RecommendationCount" msprop:FriendlyName="RecommendationCount" type="xs:int" minOccurs="0" />
+                  <xs:element name="Rating" msprop:design-time-name="020af05b-6899-4aad-accf-06c33b7bd645" msprop:DbColumnName="Rating" msprop:FriendlyName="Rating" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimGame" />
+          <xs:field xpath="GameKey" />
+        </xs:unique>
+        <xs:unique name="dbo_vTargetQuantity_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_vTargetQuantity" />
+          <xs:field xpath="GameKey" />
+        </xs:unique>
+      </xs:element>
+    </xs:schema>
+    <dsvGame_x0020_ETL xmlns="" />
+  </Schema>
+</DataSourceView>
